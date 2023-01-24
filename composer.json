@@ -1,0 +1,36 @@
+{
+    "name": "robert/my-http-response",
+    "type": "library",
+    "description": "The HTTP response module is a thin wrapper to send an HTTP response message.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RHo\\Http\\Response\\": [
+                "src/",
+                "src/successful/",
+                "src/client-error/",
+                "src/server-error/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RHo\\Http\\Response\\": [
+                "tests/",
+                "tests/successful/",
+                "tests/client-error/",
+                "tests/server-error/"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "robert/http-response": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "provide": {
+        "robert/http-response-implementation": "1.0.0"
+    }
+}
